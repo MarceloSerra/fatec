@@ -26,5 +26,8 @@ public class Main {
 
         String recursiveReverseStringResult = Recursion.recursiveReverseString("string", "");
         // System.out.println(recursiveReverseStringResult);
+
+        Integer recursiveFibonacciResult = Recursion.recursiveFibonacci(6);
+        // System.out.println(recursiveFibonacciResult);
     }
 }
