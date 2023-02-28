@@ -14,9 +14,9 @@ public class Recursion {
     }
 
     public static Integer recursiveFactorial (Integer value) {
-        // Conditional: Arg value lesser than 2
-        // Return must be the function with the value minus 1 plus the function with the value minus 2
-        return value < 2 ? value : recursiveFactorial(value - 1) + recursiveFactorial(value - 2);
+        // Conditional: Arg value equals 1
+        // Return must be the value multiplied by the function value minus 1 arg
+        return value == 1 ? value : value * recursiveFactorial(value - 1);
     }
 
     public static Integer recursiveArrayNegativeNumberCounter(Integer[] arr, Integer length, Integer negativeCount){
@@ -37,5 +37,12 @@ public class Recursion {
         // Return must be calling the function with arg being the string starting from the second position
         // and reverseArg concatenated with the first string position at left side
         return arg.length() == 0 ? reversedArg : recursiveReverseString(arg.substring(1), arg.charAt(0) + reversedArg);
+    }
+
+    public static Integer recursiveFibonacci (Integer value) {
+        // Bonus
+        // Conditional: Arg value lesser than 2
+        // Return must be the function with the value minus 1 plus the function with the value minus 2
+        return value < 2 ? value : recursiveFibonacci(value - 1) + recursiveFibonacci(value - 2);
     }
 }
