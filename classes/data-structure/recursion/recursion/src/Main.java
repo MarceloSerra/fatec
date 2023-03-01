@@ -14,7 +14,7 @@ public class Main {
         Integer recursiveArrayEvenNumberCounterResult = Recursion.recursiveArrayEvenNumberCounter(arr1, arr1.length - 1, 0);
         // System.out.println(recursiveArrayEvenNumberCounterResult);
 
-        Integer recursiveFactorialResult = Recursion.recursiveFactorial(6);
+        Double recursiveFactorialResult = Recursion.recursiveFactorial(6.0);
         // System.out.println(recursiveFactorialResult);
 
         Integer[] arr2 = {1, -2, 3, -4, 5, 6, -7, 8, 9, -10, 11, -12};
@@ -27,7 +27,22 @@ public class Main {
         String recursiveReverseStringResult = Recursion.recursiveReverseString("string", "");
         // System.out.println(recursiveReverseStringResult);
 
+        Integer recursiveSomatoryResult = Recursion.recursiveSomatory(10);
+        // System.out.println(recursiveSomatoryResult);
+
+        Integer recursiveEqualDigitsCounterResult = Recursion.recursiveEqualDigitsCounter(12234, 2, 0);
+        System.out.println(recursiveEqualDigitsCounterResult);
+
+        String recursiveDecimalToBinaryConverterResult = Recursion.recursiveDecimalToBinaryConverter(45, "");
+        // System.out.println(recursiveDecimalToBinaryConverterResult);
+
+        Double recursiveFractionalSomatoryResult = Recursion.recursiveFractionalSomatory(3.0, 0.0);
+        // System.out.println(recursiveFractionalSomatoryResult);
+
         Integer recursiveFibonacciResult = Recursion.recursiveFibonacci(6);
         // System.out.println(recursiveFibonacciResult);
+
+        // Double recursiveFractionalFactorialSomatoryResult = Recursion.recursiveFractionalFactorialSomatory(11.0, 0.0);
+        // System.out.println(recursiveFractionalFactorialSomatoryResult);
     }
 }
