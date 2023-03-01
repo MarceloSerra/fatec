@@ -13,7 +13,7 @@ public class Recursion {
         return length == 1 ? evenCount : recursiveArrayEvenNumberCounter(arr, length - 1, evenCount);
     }
 
-    public static Integer recursiveFactorial (Integer value) {
+    public static Double recursiveFactorial (Double value) {
         // Conditional: Arg value equals 1
         // Return must be the value multiplied by the function value minus 1 arg
         return value == 1 ? value : value * recursiveFactorial(value - 1);
@@ -39,10 +39,49 @@ public class Recursion {
         return arg.length() == 0 ? reversedArg : recursiveReverseString(arg.substring(1), arg.charAt(0) + reversedArg);
     }
 
-    public static Integer recursiveFibonacci (Integer value) {
-        // Bonus
+    public static Integer recursiveSomatory(Integer value) {
+        // Conditional: Value arg minus 1 lesser than 0
+        // Return must be the value plus calling the function with value minus 1
+        return value - 1 < 0 ? value : value + recursiveSomatory(value - 1);
+    }
+
+    public static String recursiveDecimalToBinaryConverter(Integer value, String converted){
+        // Conditional: Value divided by 2 minus or equals 0
+        // Return must be the function with value divided by 2 and accumulated converted args
+        if(value > 2000) throw new Error("Value arg must be lesser than 2000");
+        converted += value % 2 > 0 ? "1" : "0";
+        return value / 2 <= 0 ? converted : recursiveDecimalToBinaryConverter(value / 2, converted);
+    }
+
+    public static Double recursiveFractionalSomatory(Double value, Double somatory){
+        // Conditional: Value arg equals 1
+        // Return the function with the value minus 1 and somatory accumulator argsßß
+        somatory += 1 / value;
+        return value == 1 ? somatory : recursiveFractionalSomatory(value - 1, somatory);
+    }
+
+    public static Integer recursiveFibonacci(Integer value) {
         // Conditional: Arg value lesser than 2
         // Return must be the function with the value minus 1 plus the function with the value minus 2
         return value < 2 ? value : recursiveFibonacci(value - 1) + recursiveFibonacci(value - 2);
+    }
+
+    public static Integer recursiveEqualDigitsCounter(Integer value, Integer toCompare, Integer counter) {
+        // Conditional: Stringfied value arg length equals 1
+        // Return the function with the parsed value shifted right by 1, value to compare and counter accumulator args
+        String stringfiedValue = String.valueOf(value);
+        Integer extractedDigit = Integer.parseInt(String.valueOf(stringfiedValue.charAt(0)));
+
+        if(toCompare.equals(extractedDigit)) counter++;
+
+        return stringfiedValue.length() == 1 ? counter : recursiveEqualDigitsCounter(Integer.parseInt(stringfiedValue.substring(1)), toCompare, counter);
+    }
+
+    public static Double recursiveFractionalFactorialSomatory(Double value, Double somatory){
+        // Conditional: Value arg equals 1
+        // Return the function with the value minus 1 and somatory accumulator args
+        if(value > 10) throw new Error("Value arg must be lesser than 10");
+        somatory += 1 / recursiveFactorial(value);
+        return value == 1 ? somatory : recursiveFractionalSomatory(value - 1, somatory);
     }
 }
