@@ -67,9 +67,14 @@ public class Recursion {
     }
 
     public static Integer recursiveEqualDigitsCounter(Integer value, Integer toCompare, Integer counter) {
-        System.out.println(value);
-        if(value / 10 < 1) return value == toCompare ? ++counter : counter;
-        return recursiveEqualDigitsCounter(value / 10, toCompare, counter);
+        // Conditional: Stringfied value arg length equals 1
+        // Return the function with the parsed value shifted right by 1, value to compare and counter accumulator args
+        String stringfiedValue = String.valueOf(value);
+        Integer extractedDigit = Integer.parseInt(String.valueOf(stringfiedValue.charAt(0)));
+
+        if(toCompare.equals(extractedDigit)) counter++;
+
+        return stringfiedValue.length() == 1 ? counter : recursiveEqualDigitsCounter(Integer.parseInt(stringfiedValue.substring(1)), toCompare, counter);
     }
 
     public static Double recursiveFractionalFactorialSomatory(Double value, Double somatory){

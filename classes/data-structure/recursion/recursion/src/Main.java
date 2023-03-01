@@ -30,8 +30,10 @@ public class Main {
         Integer recursiveSomatoryResult = Recursion.recursiveSomatory(10);
         // System.out.println(recursiveSomatoryResult);
 
-        Integer recursiveEqualDigitsCounterResult = Recursion.recursiveEqualDigitsCounter(12234, 2, 0);
-        System.out.println(recursiveEqualDigitsCounterResult);
+        Integer inputArg = 836363;
+        if(inputArg < 10 || inputArg > 999999) throw new Error("Value must be between 10 and 999999");
+        Integer recursiveEqualDigitsCounterResult = Recursion.recursiveEqualDigitsCounter(inputArg, 3, 0);
+        // System.out.println(recursiveEqualDigitsCounterResult);
 
         String recursiveDecimalToBinaryConverterResult = Recursion.recursiveDecimalToBinaryConverter(45, "");
         // System.out.println(recursiveDecimalToBinaryConverterResult);
@@ -42,7 +44,7 @@ public class Main {
         Integer recursiveFibonacciResult = Recursion.recursiveFibonacci(6);
         // System.out.println(recursiveFibonacciResult);
 
-        // Double recursiveFractionalFactorialSomatoryResult = Recursion.recursiveFractionalFactorialSomatory(11.0, 0.0);
+        Double recursiveFractionalFactorialSomatoryResult = Recursion.recursiveFractionalFactorialSomatory(10.0, 0.0);
         // System.out.println(recursiveFractionalFactorialSomatoryResult);
     }
 }
