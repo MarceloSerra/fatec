@@ -1,5 +1,7 @@
 ## Exercises
 
+## Bubble and Merge Sort
+
 # 1:
 
 ![ex1](assets/ex1.png)
