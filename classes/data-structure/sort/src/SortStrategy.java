@@ -65,6 +65,30 @@ public class SortStrategy {
         merge(leftArr, middle);
         merge(rightArr, length - middle);
 
-       return mergeAll(arr, leftArr, rightArr, middle, length - middle);
+        return mergeAll(arr, leftArr, rightArr, middle, length - middle);
+    }
+
+    public static Integer[] quick(Integer[] arr, Integer left, Integer right) {
+        if (left > right) return arr;
+
+        Integer pivot = partition(arr, left, right);
+
+        quick(arr, left, pivot - 1);
+        quick(arr, pivot + 1, right);
+
+        return arr;
+    };
+
+    private static Integer partition(Integer[] arr, Integer left, Integer right) {
+        Integer pivot = arr[right];
+        Integer i = left - 1;
+        for (Integer j = left; j < right; j++) {
+            if (arr[j] < pivot) {
+                i++;
+                swap(arr, i, j);
+            }
+        }
+        swap(arr, i+1, right);
+        return i+1;
     }
 }

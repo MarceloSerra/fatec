@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/poo/cashier/cashier.iml" filepath="$PROJECT_DIR$/poo/cashier/cashier.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/classes.iml" filepath="$PROJECT_DIR$/.idea/classes.iml" />
       <module fileurl="file://$PROJECT_DIR$/data-structure/data-structure.iml" filepath="$PROJECT_DIR$/data-structure/data-structure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/poo/dependencies/dependencies.iml" filepath="$PROJECT_DIR$/poo/dependencies/dependencies.iml" />
       <module fileurl="file://$PROJECT_DIR$/poo/poo.iml" filepath="$PROJECT_DIR$/poo/poo.iml" />
       <module fileurl="file://$PROJECT_DIR$/data-structure/sort/sort.iml" filepath="$PROJECT_DIR$/data-structure/sort/sort.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop/stack-heap-overflow/stack-heap-overflow.iml" filepath="$PROJECT_DIR$/oop/stack-heap-overflow/stack-heap-overflow.iml" />
