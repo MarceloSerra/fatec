@@ -3,8 +3,8 @@ public class FlightPassenger extends Person {
     private String seat;
     private boolean boarded;
 
-    public FlightPassenger(String ticket, String seat){
-        super();
+    public FlightPassenger(String ticket, String seat, Person person){
+        super(person.name, person.birth);
         this.ticket = ticket;
         this.boarded = false;
         this.seat = seat;

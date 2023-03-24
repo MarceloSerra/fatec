@@ -5,12 +5,11 @@ public class Person {
     protected Date birth;
     protected boolean moving;
 
-    public Person(String name, Date birth, boolean moving){
+    public Person(String name, Date birth){
         this.name = name;
         this.birth = birth;
         this.moving = false;
     }
-    public Person() {}
     public void move(){
         if(!this.moving) this.moving = true;
     };
