@@ -56,11 +56,9 @@ public final class CustomDynamicStack<T> {
     public T pop() {
         this.handleEmpty();
 
-        T peek = this.storage.get(this.size);
+        T peek = this.storage.remove(this.size() - 1);
 
-        this.storage.remove(peek);
         this.decreaseSize();
-
         this.handleNewPeek();
 
         this.log();
