@@ -11,8 +11,6 @@ public class Main {
 
             for(Integer i = stack.size(); i > -1; i--) stack.pop(); // Should throw an error
         };
-
         stackTest.run();
     }
-
 }
