@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/poo/poo.iml" filepath="$PROJECT_DIR$/poo/poo.iml" />
       <module fileurl="file://$PROJECT_DIR$/poo/skeep/skeep.iml" filepath="$PROJECT_DIR$/poo/skeep/skeep.iml" />
       <module fileurl="file://$PROJECT_DIR$/data-structure/sort/sort.iml" filepath="$PROJECT_DIR$/data-structure/sort/sort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data-structure/stack/stack.iml" filepath="$PROJECT_DIR$/data-structure/stack/stack.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop/stack-heap-overflow/stack-heap-overflow.iml" filepath="$PROJECT_DIR$/oop/stack-heap-overflow/stack-heap-overflow.iml" />
     </modules>
   </component>
