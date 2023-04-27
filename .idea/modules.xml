@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/classes/poo/cashier/cashier.iml" filepath="$PROJECT_DIR$/classes/poo/cashier/cashier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/classes/data-structure/converter/converter.iml" filepath="$PROJECT_DIR$/classes/data-structure/converter/converter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/classes/poo/dependencies/dependencies.iml" filepath="$PROJECT_DIR$/classes/poo/dependencies/dependencies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/fatec.iml" filepath="$PROJECT_DIR$/.idea/fatec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/classes/poo/generics/generics.iml" filepath="$PROJECT_DIR$/classes/poo/generics/generics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/classes/data-structure/linked-list/linked-list.iml" filepath="$PROJECT_DIR$/classes/data-structure/linked-list/linked-list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/classes/data-structure/recursion/recursion.iml" filepath="$PROJECT_DIR$/classes/data-structure/recursion/recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/classes/poo/skeep/skeep.iml" filepath="$PROJECT_DIR$/classes/poo/skeep/skeep.iml" />
+      <module fileurl="file://$PROJECT_DIR$/classes/data-structure/sort/sort.iml" filepath="$PROJECT_DIR$/classes/data-structure/sort/sort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/classes/data-structure/stack/stack.iml" filepath="$PROJECT_DIR$/classes/data-structure/stack/stack.iml" />
+    </modules>
+  </component>
+</project>

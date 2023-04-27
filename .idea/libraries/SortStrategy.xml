@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SortStrategy">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/classes/data-structure/sort/lib/SortStrategy.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
