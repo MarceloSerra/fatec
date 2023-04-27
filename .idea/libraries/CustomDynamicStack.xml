@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CustomDynamicStack">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/classes/data-structure/lib/CustomDynamicStack.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
